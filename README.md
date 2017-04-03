@@ -44,21 +44,21 @@ If you prefer to execute one test at a time, the command that you should execute
 ```
     $mvn test -Dtest='name of the test.
 ```
-You can execute more than one, separated by comma ','.
+You can execute more than one test case separated by comma ','.
 
 If you decide to import the whole maven project to an IDE (Eclipse, for instance), all you have to do, is to run the classes that are in the package 'mapper' as jUnit, and the test will start automatically.
 
 ### Structure
 #### Story Files
 All the story files are placed under 'src\main\resources\stories'.
-Each story file, holds a particular test case, following the structure 'Given', 'When', 'Then'.
-The story files, are simply plain text files that describe the actual test.
+Each story file holds a particular test case, following the structure 'Given', 'When', 'Then'.
+The story files are simply plain text files that describe the actual test.
 #### Steps classes
 The Steps are written in Java, and this classes are located in: 'src\main\java\steps'.
-Each and every method, matches with the action phrases (sentences) described in the different story files.
+Each and every method matches with the action phrases (sentences) described in the different story files.
 #### Mapper files
 The java classes that map the story files with the steps, are placed in: 'src\main\java\mapper'.
-These classes, call the '.story' file, reads it, and look for the steps in the defined steps classes.
+These classes call the '.story' file, reads it, and look for the steps in the defined steps classes.
 
 ## Preconditions
 
