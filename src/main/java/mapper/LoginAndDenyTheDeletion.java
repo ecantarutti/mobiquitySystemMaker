@@ -12,12 +12,11 @@ import org.jbehave.core.reporters.StoryReporterBuilder;
 import org.jbehave.core.steps.CandidateSteps;
 import org.jbehave.core.steps.InstanceStepsFactory;
  
-public class LoginAsANewUser extends JUnitStories {
+public class LoginAndDenyTheDeletion extends JUnitStories {
 	 
-		public LoginAsANewUser() {
+		public LoginAndDenyTheDeletion() {
 			super();
 			this.configuredEmbedder().candidateSteps().add(new steps.UiSteps());
-			this.configuredEmbedder().candidateSteps().add(new steps.RestServiceSteps());
 			
 		}
 	 
@@ -33,7 +32,7 @@ public class LoginAsANewUser extends JUnitStories {
 		
 		@Override
 		protected List<String> storyPaths() {
-			return Arrays.asList("stories/LoginAsANewUser.story");
+			return Arrays.asList("stories/LoginAndDenyTheDeletion.story");
 		}
 		
 		

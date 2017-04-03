@@ -87,5 +87,15 @@ public class PageObjectModel {
 		element = driver.findElement(By.cssSelector(".navbar-brand.topnav.ng-binding"));
 		return element;
 	}
+	
+	public static WebElement languageDropdown(WebDriver driver){
+		element = driver.findElement(By.cssSelector(".dropdown-toggle.ng-binding"));
+		return element;
+	}
+	public static WebElement selectFrench(WebDriver driver){
+		element = driver.findElement(By.partialLinkText("french"));
+		return element;
+	}
+	
 
 }

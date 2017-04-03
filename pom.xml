@@ -17,7 +17,6 @@
         <junit.version>4.12</junit.version>
         <jbehave.version>4.0.5</jbehave.version>
         <selenium.version>2.53.1</selenium.version>
-        <restassured.version>2.9.0</restassured.version>
     </properties>
 
     <build>
@@ -73,12 +72,6 @@
             <groupId>org.jbehave</groupId>
             <artifactId>jbehave-core</artifactId>
             <version>${jbehave.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.jayway.restassured</groupId>
-            <artifactId>rest-assured</artifactId>
-            <version>${restassured.version}</version>
         </dependency>
 
         <dependency>

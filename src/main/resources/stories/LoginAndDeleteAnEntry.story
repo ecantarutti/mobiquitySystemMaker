@@ -15,19 +15,11 @@ Then I verify that the message 'successively logged in' is displayed on screen
 
 And I click on the 'Add New' button
 
-When I enter 'NewTitle' as title of the new item
+When I enter 'TitleToBeDeleted' as title of the new item
 And I enter 1900 as parent id
-When I search for the entry with the title of: 'NewTitle'
-
-Then I click for the entry with the title of: 'NewTitle'
-And I choose to edit this entry
-
-When I enter 'UpdatedTitle' as title of the new item
-And I enter 1914 as parent id
-
 And I go back to the main screen
+And I search for the entry with the title of: 'TitleToBeDeleted'
 
-When I search for the entry with the title of: 'UpdatedTitle'
-Then I click for the entry with the title of: 'UpdatedTitle'
+Then I click for the entry with the title of: 'TitleToBeDeleted'
 And I delete this entry
 And I confirm the deletion
