@@ -27,7 +27,7 @@ The suite has ten different test cases:
 - LoginAndDeleteAnEntry: This test creates a new entry with all the parameters, saves it, re opens it and then deletes it;
 - LoginAndAddAnEntryWithCyrillicChar: This test creates a new entry with all the parameters but using cyrillic characters on the name, saves it and verifies that it was properly saved;
 - LoginAndDenyTheDeletion: This test creates a new entry with all the parameters, presses 'delete' but cancels when the 'are you sure?' pop up appears.
-- AddingNewEntryWithoutLogin: This test verifies that no user can create a new entry if he didn't log in;
+- AddingNewEntryWithoutLogin: This test verifies that unauthorized user cannot create a new entry;
 - ChangingMainLanguage: This test verifies that the user can change the language to French;
 
 ### Maven Project
