@@ -1,8 +1,8 @@
-# computerDataBase Project
+# SystemMaker Project
 
 # Test Suite
 
-This tests are written in Java using two libraries, 'Selenium' for the UI, and 'RestAssured' for the Tear Down process.
+This tests are written in Java using 'Selenium' to automate the UI.
 The selected framework was Jbehave, due to is an easy way for the tester to administrate the Test Cases, and it gives a quick feedback through the reports of the causes of the failures.
 Also, The 'BDD' ('Behave Driven Development') approach, gives a cleaner and faster look to all of the stakeholders who want to understand quickly how the developed feature works.
 
@@ -16,25 +16,19 @@ On the second that, the Test Cases are properly described with its respective ex
 
 ### Jbehave Suite
 
-The Jbehave Test Suite executes 10 (ten) tests to verify the behaviour of the Computer DataBase website (http://computer-database.herokuapp.com/).
+The Jbehave Test Suite executes 7 (seven) tests to verify the behaviour of the Mobiquity's System Maker website (http://systemaker.com/angulardemo).
 
 ## Test Suite
 
 The suite has ten different test cases:
 
-- CreateAndDeleteComputer_ComputerDB: This test creates a new entry with all the parameters, saves it, re opens it and then deletes it;
-- CreateAndUpdateComputer_ComputerDB: This test creates a new entry with all the parameters, saves it, re opens it and then updates it;
-- CreateNewComputer_ComputerDB: This test creates a new entry with all the parameters, saves it, re opens it and then verifies that it was properly saved;
-- CreateNewComputerWithCyrillicChars_ComputerDB: This test creates a new entry with all the parameters but using cyrillic characters on the name, saves it and verifies that it was properly saved;
-- VerifyCancelFeatureWithinCreation_ComputerDB: This test creates a new entry with all the parameters, and then presses cancel and verifies that it wasn't created;
-- VerifyCorrectDateFormat_ComputerDB: This test verifies that the date field only accepts the format 'yyyy-MM-dd';
-- VerifyErrorOnEmptyCompName: This test verifies that no computer can be saved with an empty name;
-- VerifyPagination_ComputerDB: This test verifies that the application allows browsing between different pages;
-- CreateNewComputerWithoutDates_ComputerDB: The purpose of this test case is to verify that the date fields aren't mandatory;
-- CreateAPreviouslyDeletedComputer_ComputerDB: This test creates a new entry with all the parameters, saves it, re opens it and then deletes it and then creates the same entry once again.
-
-
-Each of this tests, except the one named 'CreateAndDeleteComputer_ComputerDB' and the ones that don't save a new entry, have their own personal Tear Down process. The Tear Down is executed by sending a 'POST' request the URL of the created entry adding '/delete' at the end of it.
+- LoginAndAddAnEntry: This test creates a new entry with all the parameters, saves it,and then searches for it;
+- LoginAndEditAnEntry: This test creates a new entry with all the parameters, saves it, re opens it and then updates it;
+- LoginAndDeleteAnEntry: This test creates a new entry with all the parameters, saves it, re opens it and then deletes it;
+- LoginAndAddAnEntryWithCyrillicChar: This test creates a new entry with all the parameters but using cyrillic characters on the name, saves it and verifies that it was properly saved;
+- LoginAndDenyTheDeletion: This test creates a new entry with all the parameters, presses 'delete' but cancels when the 'are you sure?' pop up appears.
+- AddingNewEntryWithoutLogin: This test verifies that no user can create a new entry if he didn't log in;
+- ChangingMainLanguage: This test verifies that the user can change the language to French;
 
 ### Maven Project
 
