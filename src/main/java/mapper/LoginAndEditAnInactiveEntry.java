@@ -12,9 +12,9 @@ import org.jbehave.core.reporters.StoryReporterBuilder;
 import org.jbehave.core.steps.CandidateSteps;
 import org.jbehave.core.steps.InstanceStepsFactory;
  
-public class LoginAndEditAnEntry extends JUnitStories {
+public class LoginAndEditAnInactiveEntry extends JUnitStories {
 	 
-		public LoginAndEditAnEntry() {
+		public LoginAndEditAnInactiveEntry() {
 			super();
 			this.configuredEmbedder().candidateSteps().add(new steps.UiSteps());
 			
@@ -32,7 +32,7 @@ public class LoginAndEditAnEntry extends JUnitStories {
 		
 		@Override
 		protected List<String> storyPaths() {
-			return Arrays.asList("stories/LoginAndEditAnEntry.story");
+			return Arrays.asList("stories/LoginAndEditAnInactiveEntry.story");
 		}
 		
 		

@@ -23,6 +23,7 @@ Then I click for the entry with the title of: 'BrandNewTitle'
 And I choose to edit this entry
 
 When I enter 'UpdatedTitle' as title of the new item
+And I check the 'Active' checkbox
 And I enter 1914 as parent id
 
 And I go back to the main screen
