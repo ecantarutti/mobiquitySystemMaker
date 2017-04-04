@@ -22,10 +22,11 @@ The Jbehave Test Suite executes 7 (seven) tests to verify the behaviour of the M
 
 The suite has ten different test cases:
 
-- LoginAndAddAnEntry: This test creates a new entry with all the parameters, saves it,and then searches for it;
+- LoginAndAddAnEntry: This test creates a new entry with all the parameters, saves it, and then searches for it;
 - LoginAndEditAnEntry: This test creates a new entry with all the parameters, saves it, re opens it and then updates it;
 - LoginAndDeleteAnEntry: This test creates a new entry with all the parameters, saves it, re opens it and then deletes it;
 - LoginAndAddAnEntryWithCyrillicChar: This test creates a new entry with all the parameters but using cyrillic characters on the name, saves it and verifies that it was properly saved;
+- LoginAndAddAnActiveEntry: This test creates a new entry with all the parameters, makes it active, saves it, and then searches for it;
 - LoginAndDenyTheDeletion: This test creates a new entry with all the parameters, presses 'delete' but cancels when the 'are you sure?' pop up appears.
 - AddingNewEntryWithoutLogin: This test verifies that unauthorized user cannot create a new entry;
 - ChangingMainLanguage: This test verifies that the user can change the language to French;
