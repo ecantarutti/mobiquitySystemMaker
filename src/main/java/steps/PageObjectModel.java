@@ -49,6 +49,11 @@ public class PageObjectModel {
 		element = driver.findElement(By.xpath("//button[@class = 'close']"));
 		return element;
 	}
+	
+	public static WebElement checkActiveCheckBox(WebDriver driver) {
+		element = driver.findElement(By.cssSelector("input[ng-model = 'new.active']"));
+		return element;
+	}
 
 	public static WebElement searchBox(WebDriver driver) {
 		element = driver.findElement(By.cssSelector("input[ng-model='searchInput']"));

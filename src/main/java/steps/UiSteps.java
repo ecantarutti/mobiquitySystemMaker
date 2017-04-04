@@ -5,6 +5,7 @@ import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 import org.jbehave.core.steps.Steps;
+import org.junit.AfterClass;
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -27,6 +28,11 @@ public class UiSteps extends Steps {
 
 		}
 		driver.manage().deleteAllCookies();
+	}
+	
+	@AfterClass
+	public static void close(){
+		driver.close();
 	}
 
 	@Given("I open the url $url")
@@ -55,8 +61,12 @@ public class UiSteps extends Steps {
 
 	@When("I click on the 'Add New' button")
 	@Then("I click on the 'Add New' button")
-	public void addNewW() {
+	public void addNew() {
 		PageObjectModel.addItem(driver).click();
+	}
+	@When("I check the 'Active' checkbox")
+	public void checkActiveCheckbox() {
+		PageObjectModel.checkActiveCheckBox(driver).click();
 	}
 
 	@When("I enter '$title' as title of the new item")
