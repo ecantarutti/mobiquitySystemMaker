@@ -16,7 +16,7 @@ On the second that, the Test Cases are properly described with its respective ex
 
 ### Jbehave Suite
 
-The Jbehave Test Suite executes 7 (seven) tests to verify the behaviour of the Mobiquity's System Maker website (http://systemaker.com/angulardemo).
+The Jbehave Test Suite executes 8 (eight) tests to verify the behaviour of the Mobiquity's System Maker website (http://systemaker.com/angulardemo).
 
 ## Test Suite
 
