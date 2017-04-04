@@ -16,7 +16,7 @@ On the second that, the Test Cases are properly described with its respective ex
 
 ### Jbehave Suite
 
-The Jbehave Test Suite executes 8 (eight) tests to verify the behaviour of the Mobiquity's System Maker website (http://systemaker.com/angulardemo).
+The Jbehave Test Suite executes 9 (nine) tests to verify the behaviour of the Mobiquity's System Maker website (http://systemaker.com/angulardemo).
 
 ## Test Suite
 
@@ -24,7 +24,8 @@ The suite has ten different test cases:
 
 - LoginAndAddAnEntry: This test creates a new entry with all the parameters, saves it, and then searches for it;
 - LoginAndEditAnEntry: This test creates a new entry with all the parameters, saves it, re opens it and then updates it;
-- LoginAndDeleteAnEntry: This test creates a new entry with all the parameters, saves it, re opens it and then deletes it;
+- LoginAndDeleteAnActiveEntry: This test creates a new entry with all the parameters, makes it active, saves it, re opens it and then deletes it;
+- LoginAndDeleteAnEntry: This test creates a new entry with all the parameters, sets it as inactive, saves it, re opens it and then deletes it;
 - LoginAndAddAnEntryWithCyrillicChar: This test creates a new entry with all the parameters but using cyrillic characters on the name, saves it and verifies that it was properly saved;
 - LoginAndAddAnActiveEntry: This test creates a new entry with all the parameters, makes it active, saves it, and then searches for it;
 - LoginAndDenyTheDeletion: This test creates a new entry with all the parameters, presses 'delete' but cancels when the 'are you sure?' pop up appears.
